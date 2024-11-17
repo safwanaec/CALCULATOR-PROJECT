@@ -9,7 +9,7 @@ class TextFieldExample
         // Creating a JFrame object with title "TextField Example."  
         JFrame f= new JFrame("TextField Example");    
         // Creating two JTextField objects  
-        JTextField t1, t2,t3,t4;    
+        JTextField t1, t2,t3,t4,t5;    
         // Initializing the first JTextField with default text "Welcome to Javatpoint."  
         t1 = new JTextField("Welcome to Javatpoint.");    
         // Setting the position and size of the first JTextField  
@@ -25,11 +25,15 @@ class TextFieldExample
         t4 = new JTextField("Awt is Nice to handle");
         t4.setBounds(50,250, 200,30);
 
+        t5 = new JTextField("JFrame is nice");
+        t5.setBounds(50,300, 200,30);
+
         // Adding JTextFields to the JFrame  
         f.add(t1);  
         f.add(t2);  
         f.add(t3);
         f.add(t4);
+        f.add(t5);
         // Setting the size of the JFrame  
         f.setSize(400,400);    
         // Setting layout to null to use absolute positioning  
