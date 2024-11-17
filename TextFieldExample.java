@@ -1,3 +1,4 @@
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
@@ -7,7 +8,11 @@ class TextFieldExample
     public static void main(String args[])    
     {    
         // Creating a JFrame object with title "TextField Example."  
-        JFrame f= new JFrame("TextField Example");    
+        JFrame f= new JFrame("TextField Example");   
+        
+        JButton b=new JButton("Click Here");  
+       
+        
         // Creating two JTextField objects  
         JTextField t1, t2,t3,t4,t5,t6;    
         // Initializing the first JTextField with default text "Welcome to Javatpoint."  
@@ -30,6 +35,9 @@ class TextFieldExample
 
         t6 = new JTextField("JFrame is nice");
         t6.setBounds(50,350, 200,30);
+
+        b.setBounds(100,400,100,30);  
+        f.add(b);  
 
         // Adding JTextFields to the JFrame  
         f.add(t1);  
