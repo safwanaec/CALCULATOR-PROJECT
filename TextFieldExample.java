@@ -50,7 +50,7 @@ class TextFieldExample
         f.setSize(500,500);    
         // Setting layout to null to use absolute positioning  
         f.setLayout(null);    
-       
+        
         // Making the JFrame visible  
         f.setVisible(true);    
     }    
